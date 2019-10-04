@@ -30,7 +30,7 @@ We are also open to debate all the statemets below, however know that if you lik
 
 # 1. Mom or Dad Code Decisions
 
-Here we will
+Here we will state our choice between two options that are widely used by the community. They were made after intense fights and several briberies but if you feel you have something to share or discuss, submit your opinion and it will be ignored as soon as possible **LOL**
 
 ## Async/Await vs Then
 
@@ -196,9 +196,10 @@ The mother of all discussions. We know what @joshmorony said, providers and serv
 Providers will be the ones that communicate with the Database, interacting with entities and db methods. In other words, providers will serve as a type of interface of the db.
 
 ~~~ ts
+❌🤢
 // model.provider.ts
 function getModelFromDB() : Promise<DBElement> {
-    return db.get('model').valueChanges();
+    return db.get('model')
 } 
 ~~~
 
