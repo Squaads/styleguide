@@ -8,7 +8,7 @@ At Squaads we believe that every developer has its own way to code and at some s
 
 We are also open to debate all the statemets below, however know that if you like non-functional programming (ask us for the definition) you are 🔥🔥🔥FIRED🔥🔥🔥. 
 
-- [1. Mom or Dad Code Decisions](#1-code-stuff)
+- [1. Mom or Dad Code Decisions](#1-mom-or-dad-code-decisions)
     - [Async/Await vs Then](##async/await-vs-then)
     - [Constructor vs LifeCycle Methods](##constructor-vs-lifecycle-methods)
     - [Interfaces vs Classes](##interfaces-vs-classes)
@@ -58,13 +58,13 @@ As you can see, when you need to use several promises in a row and you cant do t
 
 ~~~ ts
 ✔😍
-const result = promise().catch();
+const result = await promise().catch();
 // stuff
-const anotherResult = anotherPromise().catch();
+const anotherResult = await anotherPromise().catch();
 // more stuff
-const thirdResult = thirdPromise().catch();
+const thirdResult = await thirdPromise().catch();
 // do more stuff
-const oneMoreResult = oneMorePromise().catch();
+const oneMoreResult = await oneMorePromise().catch();
 ~~~
 
 ## Constructor vs LifeCycle Methods
