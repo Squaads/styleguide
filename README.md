@@ -111,7 +111,7 @@ export interface Model {
 
 ~~~ ts
 ✔😍
-export interface Model {
+export class Model {
     prop1: string;
     prop2: int;
     prop3: bool;
@@ -179,8 +179,8 @@ function accessToDB() : Promise<DBElement> {
 ~~~ ts
 ✔😍
 // provider.ts
-function accessToDB() : Promise<DBElement> {
-    return getElementFromDB().pipe(take(1)).toPromise();
+function accessToDB() : Observable<DBElement> {
+    return getElementFromDB();
 } 
 
 // controller.ts
